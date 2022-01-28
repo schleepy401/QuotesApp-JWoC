@@ -1,6 +1,7 @@
 # QuotesApp-JWoC
 Project for JWoC
 The goal here is to build an app to generate quotes using my own [quotescraper API](https://github.com/Ly0kami/quotescraper).
+For the issues to be solved, head over [here.](https://github.com/Ly0kami/QuotesApp-JWoC/issues)
 
 ## Expected Features
 - **Languages used:** Kotlin

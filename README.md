@@ -42,5 +42,5 @@ File -> New -> Import Project -> Locate the ZIP and run
 ```
 Android Studio -> New -> Import Project -> Create Project from Gradle -> Locate the git repo directory and click on the name.
 ```
-* If you chose method 3, just install the APK.
+* Just install the APK, duh.
 

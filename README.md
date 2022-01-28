@@ -28,7 +28,7 @@ You can download the ZIP directly from the above link or from the "Clone or Down
 ```
 * Method 2: Use Git bash by typing the below command in your terminal. If you don't have git installed, [you can get it from here.](https://git-scm.com/downloads)
 ```
-git clone https://github.com/w0lfw1tz/quotes-android-app
+git clone https://github.com/Ly0kami/QuotesApp-JWoC
 ```
 
 ### Running the Project

@@ -3,7 +3,9 @@ Project for JWoC.<br>
 
 ## 🎯 **Project Objective**
 *We would be building an app to display random quotes fetched using my own [quotescraper API](https://github.com/Ly0kami/quotescraper) from scratch via this project, block by block and with additional cool features.*
+
 This project is aimed to get the mentees accustomed with the ins and outs of basic Android development.
+
 The major focus here would be
 - 📱 *Good UI/UX:* Focusing over Functionality and Form alike.
 - ⚙️ *Activity handling:* Exploring more about the core of android apps, activities.
@@ -11,11 +13,14 @@ The major focus here would be
 
 ## ⛔ **Issues**
 Please head over to [this link](https://github.com/Ly0kami/QuotesApp-JWoC/issues) or click on the issues section above.
+
 The issues are tailored around the aforementioned objectives for now, and are suited for beginners in the world of android development and first-time contributors, as well as experienced android developers alike.
+
 As the project progresses we would be tackling better and more difficult problems along the way. 💪🏿
 
 ## 👾 **Tech Stack**
 Our tech stack is gonna be **Android Studio, and Kotlin.**
+
 Yep, basic Git skills are a must too 🤷🏿‍♂️
 
 ## Getting Started

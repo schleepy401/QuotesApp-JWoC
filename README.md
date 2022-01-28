@@ -2,13 +2,11 @@
 Project for JWoC
 The goal here is to build an app to generate quotes using my own [quotescraper API](https://github.com/Ly0kami/quotescraper).
 
-## Features
+## Expected Features
 - **Languages used:** Kotlin
 - **Built using:** [Android Studio](https://developer.android.com/studio?hl=en)
-- **Libraries used:** Volley
 - **What does the app do?:**
   - Displays random quotes generated from my own [quotescraper API](https://github.com/Ly0kami/quotescraper)
-  - Click refresh for more random quotes (won't work until bugs are fixed both in the API and the app)
   
 ## Getting Started
 

@@ -39,10 +39,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 You should have:<br>
-0. [Git CLI](https://git-scm.com/downloads)
-1. Either [Android Studio](https://developer.android.com/studio?hl=en) installed on your system, or
-2. An Android Device running Android version 5.0 or above, or
-3. both.
+1. [Git CLI](https://git-scm.com/downloads)
+2. Either [Android Studio](https://developer.android.com/studio?hl=en) installed on your system, or
+3. An Android Device running Android version 5.0 or above, or
+4. both.
 
 ### Installation
 * Method 1: Use this repo itself by clicking [here.](https://github.com/Ly0kami/QuotesApp-JWoC/archive/master.zip)

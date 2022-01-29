@@ -25,16 +25,20 @@ Yep, basic Git skills are a must too 🤷🏿‍♂️
 
 
 ## ❓ **How to contribute?**
+- **The issues are to be solved only by [JGEC Winter of Code](http://jwoc.tech) participants. PRs of non-participants AND ones going against the event criteria won't be entertained.**
+- *Any PRs made before 1st February 2022 are INVALID.*
+- Select an issue and request for working on the same.
 - Issues would be assigned on a first-come-first-serve basis (or a queue structure for people who have studied some DSA). After the issues have been assigned,
 - Fork the repository to your GitHub account. (Use the fork button at the top of the page!)
 - Clone the repository onto your local system by using the [instructions given below.](#installation)
 - Make the requisite changes and then [Create a Pull Request.](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- In the PR message, please explain shortly what changes you made and why. Also include screenshots of the working app.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development, playing and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for development, playing and testing purposes. Or whatever you wanna do ;_;
 
 ### Prerequisites
-You should have:
+You should have:<br>
 0. [Git CLI](https://git-scm.com/downloads)
 1. Either [Android Studio](https://developer.android.com/studio?hl=en) installed on your system, or
 2. An Android Device running Android version 5.0 or above, or

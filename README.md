@@ -23,6 +23,13 @@ Our tech stack is gonna be **Android Studio, and Kotlin.**
 
 Yep, basic Git skills are a must too 🤷🏿‍♂️
 
+
+## ❓ **How to contribute?**
+- Issues would be assigned on a first-come-first-serve basis (or a queue structure for people who have studied some DSA). After the issues have been assigned,
+- Fork the repository to your GitHub account. (Use the fork button at the top of the page!)
+- Clone the repository onto your local system (instructions given below)
+- Make the requisite changes and then *Create a Pull Request.*
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development, playing and testing purposes.

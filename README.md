@@ -1,5 +1,5 @@
 # QuotesApp-JWoC
-Project for JWoC.<br>
+Android + Kotlin Project for the 2022 edition of the Open Source Contribution competition, JGEC Winter of Code aka [JWoC](http://jwoc.tech).<br>
 
 ## 🎯 **Project Objective**
 *We would be building an app to display random quotes fetched using my own [quotescraper API](https://github.com/Ly0kami/quotescraper) from scratch via this project, block by block and with additional cool features.*

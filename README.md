@@ -27,22 +27,20 @@ Yep, basic Git skills are a must too 🤷🏿‍♂️
 ## ❓ **How to contribute?**
 - Issues would be assigned on a first-come-first-serve basis (or a queue structure for people who have studied some DSA). After the issues have been assigned,
 - Fork the repository to your GitHub account. (Use the fork button at the top of the page!)
-- Clone the repository onto your local system (instructions given below)
-- Make the requisite changes and then *Create a Pull Request.*
+- Clone the repository onto your local system by using the [instructions given below.](#installation)
+- Make the requisite changes and then [Create a Pull Request.](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 ## Getting Started
-
 These instructions will get you a copy of the project up and running on your local machine for development, playing and testing purposes.
 
 ### Prerequisites
-
-You should either have:
-1. [Android Studio](https://developer.android.com/studio?hl=en) installed on your system, or
+You should have:
+0. [Git CLI](https://git-scm.com/downloads)
+1. Either [Android Studio](https://developer.android.com/studio?hl=en) installed on your system, or
 2. An Android Device running Android version 5.0 or above, or
 3. both.
 
 ### Installation
-
 * Method 1: Use this repo itself by clicking [here.](https://github.com/Ly0kami/QuotesApp-JWoC/archive/master.zip)
 
 ```

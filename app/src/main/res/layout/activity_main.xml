@@ -6,16 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Comment out this textView if you don't want this to be displayed in the app but let it remain in the source code as a message :) ~ Sanskar -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hi JWoC participant! \n Hope this becomes your first introduction to the world of open source and development. For the next steps, please go to the github repo. Issues would be updated in the days to come. Thanks!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:textSize="25sp"
-        android:gravity="center"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Quotes App</string>
+    <string name="quotes">quotes</string>
 </resources>

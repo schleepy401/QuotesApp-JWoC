@@ -27,22 +27,20 @@ class MainActivity : AppCompatActivity() {
         val viewModel = ViewModelProvider(this)[QuoteViewModel::class.java]
         Log.d("this", "$message")
 
-        if (appContext!!.isOnline || message.isNotEmpty() || authors.isNotEmpty()) {
-            viewModel.getQuotes()
-            viewModel.quotes.observe(this) {
-                for (i in it.indices) {
-                    message.add(it[i].quote)
-                    authors.add(it[i].author)
-                }
-                viewPager.adapter = RecyclerViewAdapter(message, authors)
-            }
-        }
-        else if (!appContext!!.isOnline && message.isEmpty() && authors.isEmpty()){
-            Snackbar.make(view,"Please connect to internet",Snackbar.LENGTH_INDEFINITE)
-                    .setAction("OK"){
+        if (!appContext!!.isOnline && message.isEmpty() && authors.isEmpty()) {
+            Snackbar.make(view, "Please connect to internet", Snackbar.LENGTH_INDEFINITE)
+                    .setAction("OK") {
                         this.recreate()
                     }
                     .show()
+        }
+        viewModel.getQuotes()
+        viewModel.quotes.observe(this) {
+            for (i in it.indices) {
+                message.add(it[i].quote)
+                authors.add(it[i].author)
+            }
+            viewPager.adapter = RecyclerViewAdapter(message, authors)
         }
     }
 }

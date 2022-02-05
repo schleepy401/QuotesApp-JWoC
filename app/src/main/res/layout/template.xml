@@ -2,24 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@drawable/wave"
-    tools:context=".MainActivity">
-
-    <!-- Comment out this textView if you don't want this to be displayed in the app but let it remain in the source code as a message :) ~ Sanskar
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hi JWoC participant! \n Hope this becomes your first introduction to the world of open source and development. For the next steps, please go to the github repo. Issues would be updated in the days to come. Thanks!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:textSize="25sp"
-        android:gravity="center"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-        -->
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
@@ -47,6 +33,7 @@
         android:paddingTop="16dp"
         android:paddingEnd="16dp"
         android:paddingBottom="40dp"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,7 +106,8 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             app:drawableStartCompat="@drawable/arrow_left"
-            app:drawableTint="#FFFFFF" />
+            app:drawableTint="#FFFFFF"
+            android:layout_margin="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -131,6 +119,7 @@
             android:fontFamily="@font/montserrat"
             android:textSize="18sp"
             app:drawableEndCompat="@drawable/arrow_right"
+            android:layout_margin="10dp"
             app:drawableTint="#FFFFFF" />
     </LinearLayout>
 
@@ -165,14 +154,5 @@
         android:focusable="true"
         android:contentDescription="@string/sharing_button" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

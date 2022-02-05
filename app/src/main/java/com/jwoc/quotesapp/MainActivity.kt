@@ -2,30 +2,47 @@ package com.jwoc.quotesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.snackbar.Snackbar
+import com.jwoc.quotesapp.App.Companion.appContext
 import com.jwoc.quotesapp.RecylerView.RecyclerViewAdapter
+import com.jwoc.quotesapp.databinding.ActivityMainBinding
+import com.jwoc.quotesapp.viewmodel.QuoteViewModel
 
 class MainActivity : AppCompatActivity() {
+    private var binding : ActivityMainBinding? = null
+    val message :ArrayList<String> = arrayListOf()
+    val authors: ArrayList<String> = arrayListOf()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding!!.root
+        setContentView(view)
 
-        //inialization
-        val viewPager : ViewPager2 =findViewById(R.id.viewpager);
+        //initialization
+        val viewPager: ViewPager2 = findViewById(R.id.viewpager)
+        val viewModel = ViewModelProvider(this)[QuoteViewModel::class.java]
+        Log.d("this", "$message")
 
-        //data's
-        //info's ->  I have created two Static Array ,one for saving quotes ("message") and another is saving authors("authors")
-        val message : Array<String> =arrayOf("Don't let Your happiness depend on something you may lose",
-            "Fantacy is hardly An Escape From Reality It's A Way Of understanding It",
-            "When Something is Important enough,you Do It Even If The Odds Aren't In Yout Favor",
-            "In Life Don't react always respond",
-            "It's Only Bad Day Not Bad Life",
-            "All arts is kind of confussion");
-        val authors : Array<String> =arrayOf("C.S.lewis","Loyd Alexander",
-            "Elon Musk",
-            "Sundar Pitchai",
-            "Johnny Depp",
-            "James Baldwin")
-        viewPager.adapter = RecyclerViewAdapter(message,authors)
+        if (appContext!!.isOnline || message.isNotEmpty() || authors.isNotEmpty()) {
+            viewModel.getQuotes()
+            viewModel.quotes.observe(this) {
+                for (i in it.indices) {
+                    message.add(it[i].quote)
+                    authors.add(it[i].author)
+                }
+                viewPager.adapter = RecyclerViewAdapter(message, authors)
+            }
+        }
+        else if (!appContext!!.isOnline && message.isEmpty() && authors.isEmpty()){
+            Snackbar.make(view,"Please connect to internet",Snackbar.LENGTH_INDEFINITE)
+                    .setAction("OK"){
+                        this.recreate()
+                    }
+                    .show()
+        }
     }
 }

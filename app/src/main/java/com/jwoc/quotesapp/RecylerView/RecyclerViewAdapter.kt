@@ -14,10 +14,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.jwoc.quotesapp.R
 
-class RecyclerViewAdapter(array1 : Array<String>,array2 : Array<String>) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+class RecyclerViewAdapter(array1 : ArrayList<String>,array2 : ArrayList<String>) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
-    val quotes : Array<String> =array1;
-    val author : Array<String> =array2;
+    val quotes : ArrayList<String> =array1;
+    val author : ArrayList<String> =array2;
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v= LayoutInflater.from(parent.context).inflate(R.layout.template,parent,false);

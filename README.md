@@ -32,6 +32,7 @@ Yep, basic Git skills are a must too 🤷🏿‍♂️
 - Fork the repository to your GitHub account. (Use the fork button at the top of the page!)
 - Clone the repository onto your local system by using the [instructions given below.](#installation)
 - Make the requisite changes and then [Create a Pull Request.](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- The PR should be made in a branch named as your GitHub username so that it is easier for us.
 - In the PR message, please explain shortly what changes you made and why. Also include screenshots of the working app.
 
 ## Getting Started

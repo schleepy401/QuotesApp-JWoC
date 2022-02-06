@@ -44,6 +44,8 @@ dependencies {
     //UI
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
 
     //Scalable Unit Scales
     implementation 'com.intuit.sdp:sdp-android:1.0.6'

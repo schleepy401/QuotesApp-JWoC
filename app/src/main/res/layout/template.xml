@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/wave"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="40dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleX="-1"
+            android:scaleY="-1"
+            android:src="@drawable/quote"
+            app:tint="#A9A9A9"
+            android:contentDescription="@string/quote_icon" />
+
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/lobster"
+            android:letterSpacing="0.05"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/Quote"
+            android:textColor="#FFF"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/quoteAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lobster"
+            android:letterSpacing="0.05"
+            android:paddingStart="16dp"
+            android:paddingEnd="20dp"
+            android:text="@string/author_name"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            app:drawableLeftCompat="@drawable/author_icon" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="end"
+            android:src="@drawable/quote"
+            app:tint="#A9A9A9"
+            android:contentDescription="@string/quote_icon_ends" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/previous_quote"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/arrow_left"
+            app:drawableTint="#FFFFFF"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/next_quote"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18sp"
+            app:drawableEndCompat="@drawable/arrow_right"
+            android:layout_margin="10dp"
+            app:drawableTint="#FFFFFF" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/copy_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:clickable="true"
+        android:contentDescription="@string/copy_button"
+        android:focusable="true"
+        app:backgroundTint="#454545"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/copy"
+        app:tint="@color/white"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/share_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginEnd="70dp"
+        app:backgroundTint="#454545"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/share"
+        android:focusable="true"
+        android:contentDescription="@string/sharing_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
